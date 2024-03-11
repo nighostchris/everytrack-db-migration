@@ -1,4 +1,5 @@
 # Everytrack DB Migration
+[![Database Migration](https://github.com/nighostchris/everytrack-db-migration/actions/workflows/migrate.yaml/badge.svg)](https://github.com/nighostchris/everytrack-db-migration/actions/workflows/migrate.yaml)
 
 Centralized repository for managing database migrations for Everytrack.
 
