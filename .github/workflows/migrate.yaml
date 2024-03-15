@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - migrations
+      - migrations/**
 
 jobs:
   database-migration:
