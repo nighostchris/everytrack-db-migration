@@ -1,7 +1,11 @@
 name: Database Seeding
 
 on:
-  workflow_dispatch
+  push:
+    branches:
+      - master
+    paths:
+      - seeds/**
 
 jobs:
   database-seeding:
