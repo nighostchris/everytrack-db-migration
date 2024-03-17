@@ -1,0 +1,22 @@
+name: Database Seeding
+
+on:
+  workflow_dispatch
+
+jobs:
+  database-seeding:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Cloning repository source code
+        uses: actions/checkout@v4
+      - name: Setting up node environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '>=20.11.0'
+      - name: Install npm dependencies
+        run: npm ci
+      - name: Run database seeding
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: npx knex seed:run
