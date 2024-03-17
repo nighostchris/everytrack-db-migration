@@ -7,6 +7,7 @@ Centralized repository for managing database migrations for Everytrack.
 
 - [Local Environment Setup](#local-environment-setup)
   - [Postgres](#postgres)
+  - [Seeding](#seeding)
   - [Migration](#migration)
 - [Useful Commands](#useful-commands)
   - [pgcli](#pgcli)
@@ -23,6 +24,18 @@ docker run -d -e POSTGRES_USER=everytrack -e POSTGRES_PASSWORD=everytrack -p 543
 # Access database in container
 docker exec -it everytrack-pg bash
 psql -U everytrack -d postgres
+```
+
+### Seeding
+
+```bash
+npm ci
+
+# Create new seed file
+npx knex seed:make <name>
+
+# Run seed files
+npx knex seed:run
 ```
 
 ### Migration

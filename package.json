@@ -1,0 +1,22 @@
+{
+  "name": "everytrack-db-migration",
+  "version": "0.0.0",
+  "description": "Centralized repository for managing database migrations for Everytrack",
+  "author": "Chris Liu <chrisliupascal@gmail.com>",
+  "license": "Chris Liu",
+  "scripts": {},
+  "engines": {
+    "node": ">=20.11.0",
+    "npm": ">=10.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "knex": "^3.1.0",
+    "pg": "^8.8.0"
+  }
+}
